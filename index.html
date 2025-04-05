@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f0f2f5;
+  background: #fff0f5; /* Fondo suave de lavanda pálido para el Día de la Madre */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,18 +17,25 @@ body {
 }
 
 .form-container {
-  background: #fff;
-  padding: 30px 25px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(145deg, #ffccd5, #f7a1c3); /* Degradado en tonos suaves de rosa y lavanda */
+  padding: 20px 15px; /* Reducción de padding */
+  border-radius: 15px; /* Bordes más redondeados */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 320px; /* Tamaño más pequeño */
+  text-align: center;
+  color: #fff;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 25px;
-  color: #333;
+  margin-bottom: 15px; /* Menos espacio entre título y formulario */
+  color: #fff;
+  font-size: 24px; /* Más pequeño */
+  font-weight: 600;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-family: 'Georgia', serif;
 }
 
 form {
@@ -37,38 +44,82 @@ form {
 }
 
 label {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-weight: 600;
-  color: #555;
+  color: #fff;
+  font-size: 12px; /* Fuente más pequeña */
 }
 
 input, select {
-  padding: 10px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 8px 10px; /* Menos padding en los campos */
+  margin-bottom: 10px; /* Menos espacio entre campos */
+  font-size: 12px; /* Texto más pequeño */
+  border: 1px solid #ff5c8e; /* Bordes rosados suaves */
+  border-radius: 8px;
   transition: 0.3s ease;
+  background-color: #fff8f9; /* Fondo blanco suave para los campos */
+  color: #333;
 }
 
 input:focus, select:focus {
-  border-color: #007bff;
+  border-color: #ff4081; /* Rojo suave al enfocar */
   outline: none;
 }
 
 button {
-  background-color: #007bff;
+  background-color: #ff4081; /* Rosa brillante para el botón */
   color: white;
-  padding: 12px;
+  padding: 10px; /* Menos padding */
   border: none;
-  border-radius: 6px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: 14px; /* Texto más pequeño */
   cursor: pointer;
   transition: background 0.3s ease;
+  font-weight: 600;
+  margin-top: 12px; /* Menos espacio arriba */
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #e5005f; /* Color más fuerte cuando se pasa el ratón */
+}
+
+footer {
+  font-size: 11px; /* Fuente pequeña para el pie de página */
+  color: #fff;
+  margin-top: 15px;
+}
+
+hr {
+  border: 1px solid #ffccd5;
+  margin: 18px 0; /* Menos espacio entre la línea */
+}
+
+/* Estilo para el contorno de los campos */
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select {
+  border: 1px solid #ff80b2; /* Bordes suaves */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border: 1px solid #ff5c8e; /* Borde rosado más intenso al enfocar */
+}
+
+/* Detalles creativos de decoración */
+.form-container::before {
+  content: "💐";
+  font-size: 30px; /* Un poquito más pequeño que antes */
+  margin-bottom: 10px; /* Menos espacio entre el ícono y el título */
+}
+
+form input,
+form select {
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
 }
 
 
